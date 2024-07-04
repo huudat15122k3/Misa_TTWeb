@@ -1,0 +1,42 @@
+.m-icon {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.m-icon-add {
+    background-image: url(../../assets/icon/add.png);
+}
+
+
+.m-icon-dashboard {
+    background-image: url(../../assets/icon/dashboard.svg);
+}
+
+.m-icon-avatar {
+    background-image: url(../../assets/icon/avatar-default.png);
+}
+
+.m-icon-report {
+    background-image: url(../../assets/icon/report.svg);
+}
+
+.m-icon-employee {
+    background-image: url(../../assets/icon/dic-employee.svg);
+}
+
+.m-icon-setting {
+    background-image: url(../../assets/icon/setting.svg);
+}
+
+.m-icon-option {
+    background-image: url(../../assets/icon/option.png);
+}
+
+.m-icon-excel {
+    background-image: url(../../assets/icon/export-excel-50.png);
+}
+
+.m-icon-refresh {
+    background-image: url(../../assets/icon/refresh.png);
+}

@@ -1,0 +1,62 @@
+.m-paging {
+    height: 48px;
+    width: 100%;
+    border-top: 1px solid #E0E0E0 ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    position: absolute;
+    bottom: 0;
+    box-sizing: border-box;
+}
+
+.m-sum {
+    display: flex;
+}
+
+
+.m-paging-right {
+    display: flex;
+    align-items: center;
+}
+
+.m-paging-right .m-per-page {
+    display: flex;
+    align-items: center;
+}
+
+.m-paging-right .m-per-page .m-current-value {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 4px;
+    box-sizing: border-box;
+}
+
+.m-paging-right .m-per-page .m-current-value:hover {
+    background-color: #E0E0E0;
+    cursor: pointer;
+}
+
+
+
+.m-numOfPage {
+    margin: 0 16px;
+}
+
+
+
+.m-page-btn {
+
+    cursor: pointer;
+}
+
+
+
+.m-page-btn .m-pre-btn {
+    
+    padding-right: 12px;
+}
+
+

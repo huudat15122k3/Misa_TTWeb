@@ -1,0 +1,31 @@
+.m-combobox-value {
+    display: none;
+    position: absolute;
+    list-style: none;
+    background-color: #fff;
+    padding: 0;
+
+    width: 76px;
+    bottom: 80%;
+    right: 14.6%;
+    padding: 8px 0;
+    margin: 0;
+    margin-bottom: 4px;
+
+    box-shadow: 2px 2px 8px rgba(23,27,42,0.24) ;
+}
+
+
+.m-combobox-value a {
+    padding-left: 14px;
+
+    text-decoration: none;
+    display:flex;
+    align-items: center;
+    height: 36px;
+    color: #171B2A;
+}
+
+.m-combobox-value a svg {
+    padding-left: 14px;
+}

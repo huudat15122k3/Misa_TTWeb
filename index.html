@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misa Demo</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/main.js"></script>
+</head>
+<body>
+    <header class="m-header">
+        <div class="m-icon-logo">
+            <div class="m-icon-menu"></div>
+            <div class="m-logo"></div>
+        </div>
+        <div class="m-combobox">
+            <select name="chinhanh" id="chinhanh" class="m-dropdown">
+                <option value="Hà Nội">Chi nhánh Hà Nội</option>
+                <option value="Hồ Chí Minh">Chi nhánh Hồ Chí Minh</option>
+                <option value="Đà Nẵng">Chi nhánh Đà Nẵng</option>
+            </select>
+        </div>
+        <div class="m-userinfo">
+            <img class="m-avatar" src="../../assets/img/default-avatar.jpg"></img>
+            <div class="m-username">Nguyễn Hữu Đạt</div>
+            <div class="m-icon-option m-icon"></div>
+        </div>
+    </header>
+    <div class="m-body">
+        <nav class="m-sidebar" id="m-sidebar">
+            <div class="m-menu-item m-menu-item-first">
+                <div class="m-menu-icon m-icon m-icon-dashboard" >
+                </div>
+    
+                <div class="m-menu-text">Trang chủ</div>
+            </div>
+            <div class="m-menu-item">
+                <div class="m-menu-icon m-icon-report m-icon"></div>
+                <div class="m-menu-text">Báo cáo</div>
+            </div>
+            <div class="m-menu-item">
+                <div class="m-menu-icon m-icon-employee  m-icon">
+                   
+                </div>
+                <div class="m-menu-text">Nhân viên</div>
+            </div>
+            <div class="m-menu-item">
+                <div class="m-menu-icon m-icon-setting m-icon"></div>
+                <div class="m-menu-text">Cài đặt</div>
+            </div>
+            <div class="m-back-btn"  onclick="collapse()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left m-back-btn-icon" id="m-back-btn-icon"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                <div class="m-back-btn-text ">Thu gọn</div>
+            </div>
+        </nav>
+        <div class="m-main-content" id="m-main-content">
+            <div class="m-page-header">
+                <div class="m-page-title">Quản lý Nhân viên</div>
+                <button class="m-btn m-icon-add m-btn-icon">Thêm mới</button>
+            </div>
+            <div class="m-table-container">
+                <div class="m-page-toolbar">
+                    <input type="text" class="m-input m-input-icon-add m-input-icon" placeholder="Tìm kiếm theo mã, họ tên">
+                    <div class="m-icon-action">
+                        <button class="m-icon-excel m-icon-btn"></button>
+                        <button class="m-icon-refresh m-icon-btn"></button>
+                    </div>
+                </div>
+                <div class="m-page-table">
+                    <table class="m-table">
+                        <thead>
+                            <tr>
+                                <th class="m-text-align-center" style="width: 0px;">
+                                    <input type="checkbox" class="m-checkbox" id="m-checkboxfirts" onchange="selectAll(this)">
+                                </th>
+                                <th class="m-text-align-left" style="width: 50px;">STT</th>
+                                <th class="m-text-align-left" style="width: 100px;">Mã nhân viên</th>
+                                <th class="m-text-align-left">Họ và tên</th>
+                                <th class="m-text-align-left" style="width: 50px;">Giới tính</th>
+                                <th class="m-text-align-center">Ngày sinh</th>
+                                <th class="m-text-align-left">Địa chỉ Email</th>
+                                <th class="m-text-align-left">Địa chỉ</th>
+                                <th class="m-text-align-left"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="m-text-align-center">
+                                    <input type="checkbox" class="m-checkbox m-sub-checkbox" id="m-sub-checkbox">
+                                </td>
+                                <td class="m-text-align-left">001</td>
+                                <td class="m-text-align-left">NV 001</td>
+                                <td class="m-text-align-left">Nguyễn Hữu Đạt</td>
+                                <td class="m-text-align-left">Nam</td>
+                                <td class="m-text-align-center">15/12/2003</td>
+                                <td class="m-text-align-left">huudat15122k3@gmail.com</td>
+                                <td class="m-text-align-left">Đan Phượng - Hà Nội</td>
+                                <td class="m-text-align-left"></td>
+                            </tr>
+                            <tr>
+                                <td class="m-text-align-center"> 
+                                    <input type="checkbox" class="m-checkbox m-sub-checkbox" id="m-sub-checkbox">
+                                </td>
+                                <td class="m-text-align-left">002</td>
+                                <td class="m-text-align-left">NV 002</td>
+                                <td class="m-text-align-left">Nguyễn Hồng Sắc</td>
+                                <td class="m-text-align-left">Nam</td>
+                                <td class="m-text-align-center">01/12/2003</td>
+                                <td class="m-text-align-left">hongsac123@gmail.com</td>
+                                <td class="m-text-align-left">Hồng Hà - Hà Nội</td>
+                                <td class="m-text-align-left"></td>
+                            </tr>
+                            <tr>
+                                <td class="m-text-align-center">
+                                    <input type="checkbox" class="m-checkbox m-sub-checkbox" id="m-sub-checkbox"> 
+                                </td>
+                                <td class="m-text-align-left">003</td>
+                                <td class="m-text-align-left">NV 003</td>
+                                <td class="m-text-align-left">Đỗ Thế Nhuận</td>
+                                <td class="m-text-align-left">Nam</td>
+                                <td class="m-text-align-center">02/03/2003</td>
+                                <td class="m-text-align-left">thenhuan321@gmail.com</td>
+                                <td class="m-text-align-left">Đà Nẵng</td>
+                                <td class="m-text-align-left"></td>
+                            </tr>
+                            <tr>
+                                <td class="m-text-align-center">
+                                    <input type="checkbox" class="m-checkbox m-sub-checkbox" id="m-sub-checkbox">
+                                </td>
+                                <td class="m-text-align-left">004</td>
+                                <td class="m-text-align-left">NV 004</td>
+                                <td class="m-text-align-left">Phạm Trịnh Thế Anh</td>
+                                <td class="m-text-align-left">Nam</td>
+                                <td class="m-text-align-center">07/05/2003</td>
+                                <td class="m-text-align-left">thaanh159@gmail.com</td>
+                                <td class="m-text-align-left">Quảng Ninh</td>
+                                <td class="m-text-align-left"></td>
+                            </tr>
+                            <tr>
+                                <td class="m-text-align-center">
+                                    <input type="checkbox" class="m-checkbox m-sub-checkbox" id="m-sub-checkbox">
+                                </td>
+                                <td class="m-text-align-left">005</td>
+                                <td class="m-text-align-left">NV 005</td>
+                                <td class="m-text-align-left">Nguyễn Tuấn Kiệt</td>
+                                <td class="m-text-align-left">Nam</td>
+                                <td class="m-text-align-center">26/06/2003</td>
+                                <td class="m-text-align-left">tuankiet465@gmail.com</td>
+                                <td class="m-text-align-left">Kim Liên - Hà Nội</td>
+                                <td class="m-text-align-left"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="m-paging">
+                        <div class="m-sum">Tổng : 
+                            <div class="m-number" style="font-weight: bold;"> 1</div>
+                        </div>
+                        <div class="m-paging-right">
+                            <div class="m-per-page">
+                                Số bản ghi/trang:
+                                <div class="m-custom-combobox">
+                                    <div class="m-current-value" onclick="show()">10
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><defs><style>.a,.b{fill:#666;}.a{opacity:0;}</style></defs><rect class="a" width="24" height="24"/><path class="b" d="M12,15.5a1,1,0,0,1-.71-.29l-4-4A1,1,0,0,1,8.71,9.79L12,13.1l3.3-3.18a1,1,0,1,1,1.38,1.44l-4,3.86A1,1,0,0,1,12,15.5Z"/></svg>
+                                    </div>
+                                    <div class="m-combobox-value" id="m-comboboxValues">
+                                        <a href="#" style="color: #50b83c;">10
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><defs><style>.a{fill:#2566e9;opacity:0;}.b{fill:#50b83c;}</style></defs><rect class="a" width="24" height="24"/><path class="b" d="M9.86,18a1,1,0,0,1-.73-.32L4.27,12.51a1,1,0,1,1,1.46-1.37l4.12,4.39,8.41-9.2a1,1,0,1,1,1.48,1.34l-9.14,10a1,1,0,0,1-.73.33Z"/></svg>
+                                        </a>
+                                        <a href="#">25</a>
+                                        <a href="#">50</a>
+                                        <a href="#">100</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m-numOfPage">1 - 1 bản ghi</div>
+                            <div class="m-page-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left m-pre-btn"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right m-next-btn"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="m-dialog">
+        <div class="m-title-dialog">Thông tin nhân viên</div>
+        <div class="m-info-left"></div>
+        <div class="m-info-right"></div>
+        <div class="m-info-remain"></div>
+    </div>
+
+</body>
+</html>

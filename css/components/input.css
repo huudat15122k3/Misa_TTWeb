@@ -1,0 +1,39 @@
+.m-input{
+    height: 36px;
+    width: 300px;
+    border: 1px solid;
+    border-color: #E0E0E0;
+    border-radius: 4px;
+    padding:0 12px;
+}
+
+.m-input::placeholder{
+    font-weight: 400;
+    font-size: 14px;
+
+    line-height: 18px;
+    text-align: left;
+    color: #9E9E9E;
+}
+
+	
+
+.m-input:hover{
+	background-color: #e6e6e6;
+  	cursor: pointer;
+}
+.m-input:focus{
+	border: 1px solid #50b83c;
+  	outline: none;
+}
+
+.m-input-icon{
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 8px) center;
+   
+}
+
+.m-input-icon-add{
+    background-image: url("../../assets/icon/search.png");
+}

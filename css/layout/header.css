@@ -40,14 +40,7 @@
     align-items: center;
 }
 
-.m-dropdown {
-    font-weight: bold;
-    padding: 8px;
-    height: auto;
-    border: 1px solid;
-    border-color: #E6E6E6;
-    border-radius: 16px;
-}
+
 
 .m-userinfo {
     display: flex;

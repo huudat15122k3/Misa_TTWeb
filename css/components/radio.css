@@ -1,0 +1,10 @@
+.m-radio-btn {
+    height: 20px;
+    width: 20px;
+}
+
+.m-radio-text {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}

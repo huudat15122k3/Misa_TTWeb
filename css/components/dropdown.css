@@ -1,0 +1,43 @@
+.m-dropdown-header {
+    font-weight: bold;
+    padding: 8px;
+    height: auto;
+    border: 1px solid;
+    border-color: #E6E6E6;
+    border-radius: 16px;
+}
+
+.m-combobox {
+    padding-left: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.m-dropdown {
+    appearance: none;
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    background: url(../../assets/icon/arrow\ down.svg) no-repeat right center;
+    background-size: 16px;
+    box-sizing: border-box;
+    height: 36px;
+    width: 320px;
+    padding: 0  8px 0 12px;
+    border: 1px solid #E6E6E6;
+    border-radius: 3px;
+}
+
+.m-dropdown:hover{
+
+  	cursor: pointer;
+}
+
+.m-dropdown:focus {
+    border: 1px solid #50b83c;
+  	outline: none;
+}
+
+.m-dropdown option:first-child {
+    display: none;
+}
+

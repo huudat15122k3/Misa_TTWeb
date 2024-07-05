@@ -14,7 +14,7 @@
             <div class="m-logo"></div>
         </div>
         <div class="m-combobox">
-            <select name="chinhanh" id="chinhanh" class="m-dropdown">
+            <select name="chinhanh" id="chinhanh" class="m-dropdown-header">
                 <option value="Hà Nội">Chi nhánh Hà Nội</option>
                 <option value="Hồ Chí Minh">Chi nhánh Hồ Chí Minh</option>
                 <option value="Đà Nẵng">Chi nhánh Đà Nẵng</option>
@@ -184,9 +184,68 @@
         </div>
     </div>
     <div class="m-dialog">
+        <!-- Tiêu đề -->
         <div class="m-title-dialog">Thông tin nhân viên</div>
-        <div class="m-info-left"></div>
-        <div class="m-info-right"></div>
+        <!-- Thông tin bên trái -->
+        <div class="m-info-left">
+            <div class="m-id-name">
+                <lable class="m-info-id">
+                    Mã nhân viên
+                    <input type="text" class="m-input">
+                </lable>
+                <lable class="m-info-name m-combobox">
+                    Họ và tên
+                    <input type="text" class="m-input ">
+                </lable>
+            </div>
+            <lable class="m-info-positon m-combobox">
+                Vị trí
+                <select name="m-job-position" id="m-job-position" class="m-dropdown">
+                    <option value=""  hidden ></option>
+                    <option value="Nhân viên">Nhân viên</option>
+                    <option value="Phó phòng">Phó phòng</option>
+                    <option value="Trưởng phòng">Trưởng phòng</option>
+                </select>
+            </lable>
+            <lable class="m-info-department">
+                Phòng ban
+                <select name="m-job-department" id="m-job-department" class="m-dropdown">
+                    <option value=""  hidden></option>
+                    <option value="Phòng nhân sự">Phòng nhân sự</option>
+                    <option value="Phòng kế toán">Phòng kế toán</option>
+                    <option value="Phòng tài chính">Phòng tài chính</option>
+                </select>
+            </lable>
+        </div>
+        <!-- Thông tin bên phải -->
+        <div class="m-info-right">
+            <div class="m-birth-gender">
+                <lable class="m-info-birth">
+                    Ngày sinh
+                    <input type="text" disabled class="m-input m-icon-date-picker m-input-icon" placeholder="mm/dd/yyyy">
+                </lable>
+                <lable class="m-info-gender m-custom-checkbox">
+                    Giới tính
+                    <div class="m-radio-text"><input type="radio" value="Nam" class="m-radio-btn" name="gender"> Nam</div>
+                    <div class="m-radio-text"><input type="radio" value="Nữ" class="m-radio-btn" name="gender"> Nữ</div>
+                    <div class="m-radio-text"><input type="radio" value="Khác" class="m-radio-btn" name="gender"> Khác</div>
+                </lable>
+            </div>
+            <div class="m-info-idcard">
+                <lable class="m-info-birth">
+                    Mã nhân viên
+                    <input type="text" class="m-input m-input-icon-add m-input-icon">
+                </lable>
+                <lable class="m-info-gender">
+                    Họ và tên
+                    <input type="text" class="m-input m-input-icon-add m-input-icon">
+                </lable>
+            </div>
+            <lable class="m-info-name">
+                Họ và tên
+                <input type="text" class="m-input m-input-icon-add m-input-icon">
+            </lable>
+        </div>
         <div class="m-info-remain"></div>
     </div>
 

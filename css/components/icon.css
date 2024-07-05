@@ -40,3 +40,7 @@
 .m-icon-refresh {
     background-image: url(../../assets/icon/refresh.png);
 }
+
+.m-icon-date-picker {
+    background-image: url(../../assets/icon/date-picker.svg);
+}

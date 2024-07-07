@@ -6,6 +6,7 @@
     width: 200px;
     transition: width 0.3s ease;
     overflow-x: hidden;
+
 }
 
 .collapsed {

@@ -6,10 +6,12 @@
 @import url(./components/combobox.css);
 @import url(./components/dropdown.css);
 @import url(./components/radio.css);
+@import url(./components/textfield.css);
 @import url(./layout/header.css);
 @import url(./layout/main-content.css);
 @import url(./layout/sidebar.css);
 @import url(./layout/page.css);
+@import url(./layout/form.css);
 
 
 body {
@@ -17,6 +19,7 @@ body {
     margin: 0;
     font-family: GoogleSans;
     font-size: 14px;
+    height: 100%;
 }
 
 @font-face {

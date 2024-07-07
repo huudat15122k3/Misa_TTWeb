@@ -44,3 +44,7 @@
 .m-icon-date-picker {
     background-image: url(../../assets/icon/date-picker.svg);
 }
+
+.m-icon-close-x {
+    background-image: url(../../assets/icon/close-48.png);
+}

@@ -1,0 +1,230 @@
+.m-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999; /* Lớp phủ phía dưới form */
+    display: none;
+}
+
+.active {
+    display: flex; 
+}
+
+.m-form {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: fit-content;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 30px 32px; 
+    position: fixed;
+    z-index: 1000;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.m-form lable {
+    margin-bottom: 22px;
+}
+
+.m-title-form {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1F1F1F;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.m-title-form button {
+    background-color: #fff;
+    background-size: 24px;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    background-position: center;
+    border: none;
+}
+
+.m-title-form button:hover{
+    filter: brightness(200%);
+    cursor: pointer;
+}
+
+.m-info {
+    display: flex;
+    gap: 20px;
+}
+
+.m-info-left {
+    box-sizing: border-box;
+    width: 50%;
+}
+
+.m-info-right {
+    box-sizing: border-box;
+    width: 50%;
+
+}
+
+.m-id-name {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-sizing: border-box;
+
+}
+
+.m-info-id {
+    width: 40%;
+}
+
+.m-info-id input{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.m-info-name  {
+    flex-grow: 1;
+}
+
+.m-info-name input{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.m-info-positon select{
+    width: 100%;
+}
+
+.m-info-department select{
+    width: 100%;
+}
+
+.m-birth-gender {
+    display: flex;
+    gap: 8px;
+}
+
+.m-info-birth input{
+    width: 200px;
+}
+
+.m-info-gender{
+    box-sizing: border-box;
+   
+}
+
+.info-radio {
+    height: 36px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-sizing: border-box;
+}
+
+.m-info-idcard {
+    width: 100%;
+    display: flex;
+    gap: 8px;
+    box-sizing: border-box;
+}
+
+.m-info-id-card{
+    width: 60%;
+}
+
+.m-info-id-card input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.m-info-date-idcard {
+    flex-grow: 1;
+    box-sizing: border-box;
+    width: 20%;
+}
+
+.m-info-date-idcard input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.m-info-place-idcard  input{
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+.m-info-address input {
+    width: 100%;
+}
+
+.m-info-phone {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+}
+
+.m-info-phone-item {
+    width:100%;
+    flex: 1;
+}
+
+.m-info-phone-item input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.m-info-bank {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+}
+
+.m-info-bank-item {
+    width:100%;
+    flex: 1;
+}
+
+.m-info-bank-item input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.m-form-btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+.m-form-btn-item {
+    padding-left: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.m-form-btn-item:first-child {
+    background-color: #fff;
+    color: #212121;
+    border: 1px solid #E0E0E0;
+}
+
+.m-form-btn-item:first-child:hover {
+    background-color: rgba(80,184,60,0.1);
+}
+

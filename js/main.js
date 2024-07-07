@@ -28,3 +28,17 @@ function collapse() {
         btn.classList.add('left');
     }
 };
+
+function active_form() {
+    document.getElementById('overlay').classList.add('active');
+}
+
+function close_form() {
+    document.getElementById('overlay').classList.remove('active');
+}
+
+function close_form_outside(event) {
+    if (event.target === document.getElementById('overlay')) {
+        document.getElementById('overlay').classList.remove('active');
+    }
+}

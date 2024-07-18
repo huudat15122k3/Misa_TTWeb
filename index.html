@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Misa Demo</title>
     <link rel="stylesheet" href="./css/main.css">
-    <script src="./js/main.js"></script>
 </head>
 <body>
     <header class="m-header">
@@ -38,7 +37,7 @@
                 <div class="m-menu-icon m-icon-report m-icon"></div>
                 <div class="m-menu-text">Báo cáo</div>
             </div>
-            <div class="m-menu-item">
+            <div class="m-menu-item choose-item" >
                 <div class="m-menu-icon m-icon-employee  m-icon">
                    
                 </div>
@@ -48,7 +47,7 @@
                 <div class="m-menu-icon m-icon-setting m-icon"></div>
                 <div class="m-menu-text">Cài đặt</div>
             </div>
-            <div class="m-back-btn"  onclick="collapse()">
+            <div class="m-back-btn"  id="collapse-button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left m-back-btn-icon" id="m-back-btn-icon"><polyline points="15 18 9 12 15 6"></polyline></svg>
                 <div class="m-back-btn-text ">Thu gọn</div>
             </div>
@@ -56,7 +55,7 @@
         <div class="m-main-content" id="m-main-content">
             <div class="m-page-header">
                 <div class="m-page-title">Quản lý Nhân viên</div>
-                <button class="m-btn m-icon-add m-btn-icon" onclick="active_form()">Thêm mới</button>
+                <button class="m-btn m-icon-add m-btn-icon" id="add-btn" >Thêm mới</button>
             </div>
             <div class="m-table-container">
                 <div class="m-page-toolbar">
@@ -67,99 +66,37 @@
                     </div>
                 </div>
                 <div class="m-page-table">
-                    <table class="m-table">
+                    <table class="m-table" id="m-table">
                         <thead>
                             <tr>
                                 <th class="m-text-align-center" style="width: 0px;">
                                     <input type="checkbox" class="m-checkbox" id="m-checkboxfirts" onchange="selectAll(this)">
                                 </th>
-                                <th class="m-text-align-left" style="width: 50px;">STT</th>
+                                <th class="m-text-align-left" style="width: 20px;">STT</th>
                                 <th class="m-text-align-left" style="width: 100px;">Mã nhân viên</th>
                                 <th class="m-text-align-left">Họ và tên</th>
-                                <th class="m-text-align-left" style="width: 50px;">Giới tính</th>
+                                <th class="m-text-align-left" style="width: 80px;">Giới tính</th>
                                 <th class="m-text-align-center">Ngày sinh</th>
                                 <th class="m-text-align-left">Địa chỉ Email</th>
                                 <th class="m-text-align-left">Địa chỉ</th>
-                                <th class="m-text-align-left"></th>
+                                <th class="m-text-align-left" > 
+                                    
+                                </th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td class="m-text-align-center">
-                                    <input type="checkbox" class="m-checkbox m-sub-checkbox" id="m-sub-checkbox">
-                                </td>
-                                <td class="m-text-align-left">001</td>
-                                <td class="m-text-align-left">NV 001</td>
-                                <td class="m-text-align-left">Nguyễn Hữu Đạt</td>
-                                <td class="m-text-align-left">Nam</td>
-                                <td class="m-text-align-center">15/12/2003</td>
-                                <td class="m-text-align-left">huudat15122k3@gmail.com</td>
-                                <td class="m-text-align-left">Đan Phượng - Hà Nội</td>
-                                <td class="m-text-align-left"></td>
-                            </tr>
-                            <tr>
-                                <td class="m-text-align-center"> 
-                                    <input type="checkbox" class="m-checkbox m-sub-checkbox" id="m-sub-checkbox">
-                                </td>
-                                <td class="m-text-align-left">002</td>
-                                <td class="m-text-align-left">NV 002</td>
-                                <td class="m-text-align-left">Nguyễn Hồng Sắc</td>
-                                <td class="m-text-align-left">Nam</td>
-                                <td class="m-text-align-center">01/12/2003</td>
-                                <td class="m-text-align-left">hongsac123@gmail.com</td>
-                                <td class="m-text-align-left">Hồng Hà - Hà Nội</td>
-                                <td class="m-text-align-left"></td>
-                            </tr>
-                            <tr>
-                                <td class="m-text-align-center">
-                                    <input type="checkbox" class="m-checkbox m-sub-checkbox" id="m-sub-checkbox"> 
-                                </td>
-                                <td class="m-text-align-left">003</td>
-                                <td class="m-text-align-left">NV 003</td>
-                                <td class="m-text-align-left">Đỗ Thế Nhuận</td>
-                                <td class="m-text-align-left">Nam</td>
-                                <td class="m-text-align-center">02/03/2003</td>
-                                <td class="m-text-align-left">thenhuan321@gmail.com</td>
-                                <td class="m-text-align-left">Đà Nẵng</td>
-                                <td class="m-text-align-left"></td>
-                            </tr>
-                            <tr>
-                                <td class="m-text-align-center">
-                                    <input type="checkbox" class="m-checkbox m-sub-checkbox" id="m-sub-checkbox">
-                                </td>
-                                <td class="m-text-align-left">004</td>
-                                <td class="m-text-align-left">NV 004</td>
-                                <td class="m-text-align-left">Phạm Trịnh Thế Anh</td>
-                                <td class="m-text-align-left">Nam</td>
-                                <td class="m-text-align-center">07/05/2003</td>
-                                <td class="m-text-align-left">thaanh159@gmail.com</td>
-                                <td class="m-text-align-left">Quảng Ninh</td>
-                                <td class="m-text-align-left"></td>
-                            </tr>
-                            <tr>
-                                <td class="m-text-align-center">
-                                    <input type="checkbox" class="m-checkbox m-sub-checkbox" id="m-sub-checkbox">
-                                </td>
-                                <td class="m-text-align-left">005</td>
-                                <td class="m-text-align-left">NV 005</td>
-                                <td class="m-text-align-left">Nguyễn Tuấn Kiệt</td>
-                                <td class="m-text-align-left">Nam</td>
-                                <td class="m-text-align-center">26/06/2003</td>
-                                <td class="m-text-align-left">tuankiet465@gmail.com</td>
-                                <td class="m-text-align-left">Kim Liên - Hà Nội</td>
-                                <td class="m-text-align-left"></td>
-                            </tr>
+                            
                         </tbody>
                     </table>
                     <div class="m-paging">
                         <div class="m-sum">Tổng : 
-                            <div class="m-number" style="font-weight: bold;"> 1</div>
+                            <div class="m-number" style="font-weight: bold;"> </div>
                         </div>
                         <div class="m-paging-right">
                             <div class="m-per-page">
                                 Số bản ghi/trang:
                                 <div class="m-custom-combobox">
-                                    <div class="m-current-value" onclick="show()">10
+                                    <div class="m-current-value" id="btn-page">10
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><defs><style>.a,.b{fill:#666;}.a{opacity:0;}</style></defs><rect class="a" width="24" height="24"/><path class="b" d="M12,15.5a1,1,0,0,1-.71-.29l-4-4A1,1,0,0,1,8.71,9.79L12,13.1l3.3-3.18a1,1,0,1,1,1.38,1.44l-4,3.86A1,1,0,0,1,12,15.5Z"/></svg>
                                     </div>
                                     <div class="m-combobox-value" id="m-comboboxValues">
@@ -183,12 +120,12 @@
             </div>
         </div>
     </div>
-    <div class="m-overlay" id="overlay" onclick="close_form_outside(event)">
-        <div class="m-form" id="m-form" >
+    <div class="m-overlay" id="overlay" >
+        <form class="m-form" id="m-form" >
             <!-- Tiêu đề -->
             <div class="m-title-form">Thông tin nhân viên
                 <div class="form-btn-close">
-                    <button class="m-icon-close-x m-btn-icon " onclick="close_form()"></button>
+                    <div class="m-icon-close-x m-icon-btn close-form-btn" ></div>
                 </div>
             </div>
             <div class="m-info">
@@ -196,17 +133,18 @@
                 <div class="m-info-left">
                     <div class="m-id-name">
                         <lable class="m-info-id m-textfield">
-                            Mã nhân viên
-                            <input type="text" class="m-input " >
+                            Mã nhân viên<span class="required">*</span>
+                            <input type="text" class="m-input " id="txtEmployeeCode" >
+                            
                         </lable>
                         <lable class="m-info-name m-textfield">
-                            Họ và tên
-                            <input type="text" class="m-input ">
+                            Họ và tên<span class="required">*</span>
+                            <input type="text" class="m-input " id="txtEmployeeFullName">
                         </lable>
                     </div>
                     <lable class="m-info-positon m-textfield">
                         Vị trí
-                        <select name="m-job-position" id="m-job-position" class="m-dropdown">
+                        <select name="m-job-position" id="m-job-position" class="m-dropdown" >
                             <option value=""  hidden ></option>
                             <option value="Nhân viên">Nhân viên</option>
                             <option value="Phó phòng">Phó phòng</option>
@@ -228,30 +166,31 @@
                     <div class="m-birth-gender">
                         <lable class="m-info-birth m-textfield">
                             Ngày sinh
-                            <input type="text" disabled class="m-input m-input-date-picker m-icon-date-picker m-input-icon" placeholder="mm/dd/yyyy">
+                            <input type="date"  class="m-input m-input-icon" id="txtEmployeeDOB" placeholder="mm/dd/yyyy">
                         </lable> 
                         <lable class="m-info-gender m-custom-checkbox m-textfield">
                             Giới tính
                             <div class="info-radio">
-                                <div class="m-radio-text"><input type="radio" value="Nam" class="m-radio-btn" name="gender"> Nam</div>
-                                <div class="m-radio-text"><input type="radio" value="Nữ" class="m-radio-btn" name="gender"> Nữ</div>
-                                <div class="m-radio-text"><input type="radio" value="Khác" class="m-radio-btn" name="gender"> Khác</div>
+                                <label class="m-radio-text"><input type="radio" value=0 class="m-radio-btn" name="gender"> Nam</label>
+                                <label class="m-radio-text"><input type="radio" value=1 class="m-radio-btn" name="gender"> Nữ</label>
+                                <label class="m-radio-text"><input type="radio" value=2 class="m-radio-btn" name="gender" > Khác</label>
                             </div>
                         </lable>
                     </div>
                     <div class="m-info-idcard">
                         <lable class="m-info-id-card m-textfield">
-                            Số CMTND
-                            <input type="text" class="m-input ">
+                            Số CMTND<span class="required">*</span>
+                            <input type="text" class="m-input " id="txtEmployeeIdCard">
                         </lable>
                         <lable class="m-info-date-idcard m-textfield">
                             Ngày cấp
-                            <input type="text" disabled class="m-input m-icon-date-picker m-input-icon m-input-date-picker" placeholder="mm/dd/yyyy">
+                            <input type="date"  class="m-input m-input-icon" id="txtEmployeeIdCardDate" placeholder="mm/dd/yyyy">
+
                         </lable>
                     </div>
                     <lable class="m-info-place-idcard m-textfield">
                         Nơi cấp
-                        <input type="text" class="m-input ">
+                        <input type="text" class="m-input" id="txtEmployeeIdCardAddress">
                     </lable>
                 </div>
             </div>
@@ -259,45 +198,63 @@
             <div class="m-info-address">
                 <lable class="m-info-place-idcard m-textfield">
                     Địa chỉ
-                    <input type="text" class="m-input ">
+                    <input type="text" class="m-input" id="txtEmployeeAddress">
                 </lable>
             </div>
             <div class="m-info-phone">
                 <lable class="m-info-phone-item m-textfield">
-                    ĐT Di động
-                    <input type="text" class="m-input ">
+                    ĐT Di động<span class="required">*</span>
+                    <input type="text" class="m-input" id="txtEmployeePhone">
                 </lable>
                 <lable class="m-info-phone-item m-textfield">
                     ĐT Cố định
-                    <input type="text" class="m-input ">
+                    <input type="text" class="m-input">
                 </lable>
                 <lable class="m-info-phone-item m-textfield">
-                    Email
-                    <input type="text" class="m-input ">
+                    Email<span class="required">*</span>
+                    <input type="text" class="m-input" id="txtEmployeeEmail">
                 </lable>
             </div>
             <div class="m-info-bank">
                 <lable class="m-info-bank-item m-textfield">
                     Tài khoản ngân hàng
-                    <input type="text" class="m-input ">
+                    <input type="text" class="m-input" id="txtEmployeeAccountBank">
                 </lable>
                 <lable class="m-info-bank-item m-textfield">
                     Tên ngân hàng
-                    <input type="text" class="m-input ">
+                    <input type="text" class="m-input" id="txtEmployeeBank">
                 </lable>
                 <lable class="m-info-bank-item m-textfield">
                     Chi nhánh
-                    <input type="text" class="m-input ">
+                    <input type="text" class="m-input">
                 </lable>
             </div>
             <!-- Button hủy - thêm -->
             <div class="m-form-btn">
-                <button class="m-btn m-form-btn-item" onclick="close_form()">Hủy</button>
-                <button class="m-btn m-form-btn-item">Thêm</button>
-                
+                <div class="m-btn m-form-btn-item close-form-btn" id="btn-close-form" >Hủy</div>
+                <button class="m-btn m-form-btn-item" id="btn-submit">Thêm</button>              
             </div>
+        </form>
+    </div>
+    <div class="m-notify" id="notify" style="display: none;">
+        <div class="left-side">
+            <div class=" m-icon" id="notify-icon"></div>
+            <div class="notify-title">Thành công!</div>
+            <div class="notify-bodytext">Thêm nhân viên thành công.</div>
+        </div>
+        <div class="right-side">
+            <a href="#" class="notify-action">Hoàn tác</a>
+            <button class="m-icon-close-x-black m-icon " ></button>
         </div>
     </div>
+    <!-- thư viện js -->
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <!-- javascript sử dụng chung -->
+     <script src="/js/resource.js"></script>
+     <script src="/js/page/sidebar.js"></script>
+    <!-- javascript dành riêng cho từng trang -->
+    <script src="/js/page/employee.js"></script>
+    <script src="/js/page/table.js"></script>
 
 </body>
 </html>

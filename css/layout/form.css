@@ -228,3 +228,11 @@
     background-color: rgba(80,184,60,0.1);
 }
 
+.m-form .form-btn-close div {
+    background-color: #fff;
+}
+
+.m-form .form-btn-close div:hover {
+    filter: brightness(200%);
+}
+

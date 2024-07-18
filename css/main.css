@@ -7,11 +7,14 @@
 @import url(./components/dropdown.css);
 @import url(./components/radio.css);
 @import url(./components/textfield.css);
+@import url(./components/notify.css);
+@import url(./components/star_require.css);
 @import url(./layout/header.css);
 @import url(./layout/main-content.css);
 @import url(./layout/sidebar.css);
 @import url(./layout/page.css);
 @import url(./layout/form.css);
+@import url(./loading/skeleton.css);
 
 
 body {
@@ -20,6 +23,7 @@ body {
     font-family: GoogleSans;
     font-size: 14px;
     height: 100%;
+    position: relative;
 }
 
 @font-face {

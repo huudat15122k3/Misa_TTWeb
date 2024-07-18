@@ -1,0 +1,49 @@
+.m-notify {
+    width: 450px;
+    height: 56px;
+    padding: 0 18px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    position: fixed; 
+    top: 20px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+.m-notify .left-side {
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.m-notify .left-side .notify-title {
+    color: #50B83C;
+    font-weight: 700;
+}
+
+.m-notify .left-side .m-icon {
+    height: 20px;
+    width:  20px;
+}
+
+.m-notify .right-side {
+
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.m-notify .right-side button{
+    height: 16px;
+    width: 16px;
+    border: none;
+}
+
+.m-notify .right-side button:hover {
+    cursor: pointer;
+}

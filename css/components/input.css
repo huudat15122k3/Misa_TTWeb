@@ -1,4 +1,5 @@
 .m-input{
+
     height: 36px;
     width: 300px;
     border: 1px solid;
@@ -36,4 +37,17 @@
 
 .m-input-date-picker {
     width: 260px;
+}
+
+.error-input {
+    border: 1px solid #E61D1D;
+}
+
+.error-text {
+    position: absolute;
+    top: 100%;
+    padding-top: 6px;
+    font-size: 10px;
+    font-weight: 400;
+    color: #E61D1D;
 }

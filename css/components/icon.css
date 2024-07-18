@@ -48,3 +48,23 @@
 .m-icon-close-x {
     background-image: url(../../assets/icon/close-48.png);
 }
+
+.m-icon-close-x-black {
+    background-image: url(../../assets/icon/x.svg);
+}
+
+.m-icon-edit {
+    background-image: url(../../assets/icon/edit.png);
+}
+
+.m-icon-copy {
+    background-image: url(../../assets/icon/copy.png);
+}
+
+.m-icon-success {
+    background-image: url(../../assets/icon/success-48.png);
+}
+
+.m-icon-error {
+    background-image: url(../../assets/icon/error-48.png);
+}

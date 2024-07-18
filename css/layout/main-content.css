@@ -46,4 +46,11 @@
 .m-page-table {
     height: 500px;
     position: relative;
+    overflow-y: auto;
+
 }
+
+
+
+
+

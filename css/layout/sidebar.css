@@ -63,6 +63,16 @@
 
 }
 
+.m-menu-item.choose-item {
+    background-color: #A7C4FF;
+    color:#fff;
+}
+
+.m-menu-item.choose-item .m-menu-icon {
+    filter: grayscale(100%) brightness(1000%);
+
+}
+
 .m-menu-item:hover .m-menu-icon{
     /* filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%) */
     filter: grayscale(100%) brightness(1000%);

@@ -5,9 +5,17 @@
 }
 
 .m-table thead {
-    background-color: #F5F5F5;
+
     color: #1F1F1F;
     font-weight: bold;
+
+}
+
+.m-table th{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #F5F5F5;
 }
 
 .m-table td,
@@ -31,4 +39,26 @@
 
 .m-table .m-text-align-center {
     text-align: center;
+}
+
+.m-table tbody tr:hover {
+    background-color: #cccccc;
+    /* cursor: pointer; */
+}
+
+.m-table thead button {
+    height: 24px;
+    width: 24px;
+    box-sizing: border-box;
+}
+
+.m-table tr td:last-child,
+.m-table th:last-child {
+    box-sizing: border-box;
+    border-left: none;
+}
+
+ .row-btn {
+    display: none;
+    box-sizing: border-box;
 }

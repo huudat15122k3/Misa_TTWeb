@@ -1,5 +1,7 @@
 .m-textfield {
+    position: relative;
     display: flex;
-    flex-direction: column;
     gap: 8px ;
+    flex-wrap: wrap;
+
 }

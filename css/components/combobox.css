@@ -26,6 +26,15 @@
     color: #171B2A;
 }
 
+.m-combobox-value a.active {
+    color: #50b83c;
+}
+
+.m-combobox-value a.active svg {
+    display: inline;
+}
+
 .m-combobox-value a svg {
+    display: none;
     padding-left: 14px;
 }

@@ -1,6 +1,9 @@
 $(document).ready(function() {
     var formMode = '';
     var employeeIDForUpdate = '';
+    var allData = [];
+    var currentPage = 1;
+    var rowsPerPage = 50;
     //Loading 
     loading();
     //Api lấy dữ liệu
@@ -63,7 +66,7 @@ $(document).ready(function() {
     }
     })
 
-
+    
     //Submit form
     $("#btn-submit").click(function(event){
         event.preventDefault();
@@ -94,10 +97,10 @@ $(document).ready(function() {
         isValid &= validateRequiredField('#txtEmployeeFullName', 'Họ tên nhân viên là bắt buộc.');
         isValid &= validateRequiredField('#txtEmployeeIdCard', 'Số CMTND là bắt buộc.');
         isValid &= validateRequiredField('#txtEmployeePhone', 'Số điện thoại là bắt buộc.');
-        isValid &= validateRequiredField('#txtEmployeeEmail', 'Email là bắt buộc.');
-        isValid &= validateEmailFormat('#txtEmployeeEmail');
+        isValid &= validateRequiredField('#txtEmployeeEmail', 'Email là bắt buộc.') && validateEmailFormat('#txtEmployeeEmail'); 
         isValid &= validateDate('#txtEmployeeDOB', 'Ngày sinh không được lớn hơn ngày hiện tại.');
         isValid &= validateDate('#txtEmployeeIdCardDate', 'Ngày cấp không được lớn hơn ngày hiện tại.');
+  
 
         if(isValid) {
             //tạo object
@@ -153,7 +156,13 @@ $(document).ready(function() {
                         }, 5000);
                     },
                     error: function(res) {
+                        notify(resource.VI.error,resource.VI.errorAddMsg);
+                        $('#notify').fadeIn();
     
+                        // Ẩn thông báo sau 5 giây
+                        setTimeout(function() {
+                            $('#notify').fadeOut();
+                        }, 5000);
                     } 
                 })
             }else {
@@ -202,7 +211,10 @@ $(document).ready(function() {
     setupValidation('#txtEmployeeFullName',  'Họ tên nhân viên là bắt buộc.');
     setupValidation('#txtEmployeeIdCard',  'Số CMTND là bắt buộc.');
     setupValidation('#txtEmployeePhone',  'Số điện thoại là bắt buộc.');
-    setupValidation('#txtEmployeeEmail',  'Email là bắt buộc.');
+
+    $('#txtEmployeeEmail').on('blur', function() {
+        validateRequiredField('#txtEmployeeEmail', "Email là bắt buộc.");
+    });
     $('#txtEmployeeEmail').on('blur',function(){
         validateEmailFormat('#txtEmployeeEmail')
     })
@@ -217,15 +229,12 @@ $(document).ready(function() {
     function showError(element, message) {
         var text_err = `<div class="error-text">${message}</div>`
         $(element).next(".error-text").remove();
-
         $(element).parent().append(text_err);
         $(element).addClass("error-input");
     }
 
-    function clearError(element, message) {
-        
+    function clearError(element, message) {   
         $(element).next(".error-text").remove();
-
         $(element).removeClass("error-input");
     }
     //validate không được bỏ trống
@@ -238,10 +247,8 @@ $(document).ready(function() {
             clearError(fieldId);
             return true;
         }
-
     }
     //validate email format
-
     function validateEmailFormat(emailField) {
         const email = $(emailField).val();
         const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
@@ -268,6 +275,8 @@ $(document).ready(function() {
             return true;
         }
     }
+
+
     //hàm hiện thị thông báo
    function notify(rs,respone) {
         if(rs == "Thành công"){
@@ -281,7 +290,6 @@ $(document).ready(function() {
                 $('.notify-title').text(rs).css('color','red');
                 $('.notify-bodytext').text(respone);
         }
-        
    }
    //hàm hiển thị loading skeleton
     function loading() {
@@ -306,44 +314,10 @@ $(document).ready(function() {
             type: "GET",
             url: "https://cukcuk.manhnv.net/api/v1/Employees",
             success: function(res) {
-                //Xóa loading
-                $("#m-table tbody").empty();
-                let numOrder = 1;
-                for(const employee of res) {
-                    let employeeCode = employee.EmployeeCode;
-                    let employeeFullName = employee.FullName;
-                    let employeeGender = employee["GenderName"];
-                    let employeeDOB = convertDate(employee["DateOfBirth"]);
-                    let employeeEmail = employee.Email;
-                    let employeeAddress = employee.Address;
-                    // Định dạng
-                    // Ngày tháng
-                   
-                    var el = $(`  <tr>
-                                    <td class="m-text-align-center">
-                                        <input type="checkbox" class="m-checkbox m-sub-checkbox" id="m-sub-checkbox">
-                                    </td>
-                                    <td class="m-text-align-left">${numOrder}</td>
-                                    <td class="m-text-align-left">${employeeCode}</td>
-                                    <td class="m-text-align-left">${employeeFullName}</td>
-                                    <td class="m-text-align-left">${employeeGender}</td>
-                                    <td class="m-text-align-center">${employeeDOB}</td>
-                                    <td class="m-text-align-left">${employeeEmail}</td>
-                                    <td class="m-text-align-left">${employeeAddress}</td>
-                                    <td class="m-text-align-left"><div class="row-btn">
-                                        <button class="m-icon-edit m-icon-btn " id="edit-btn-form"></button>
-                                        <button class="m-icon-copy  m-icon-btn " ></button>
-                                        <button class="m-icon-close-x  m-icon-btn "  id="delete-btn-form"></button>
-                                    </div>
-                                    </td>
-                                </tr>`)
-                    el.data("employee",employee)
-                    $("#m-table tbody").append(el);
-                    numOrder++;
-                    $(".m-number").text(numOrder-1);
-                }
+                allData = res;
+                renderTable();
             }
-        })
+        });
     }
     //hàm dblClick 1 row
     function rowDbClick(event) {
@@ -368,6 +342,105 @@ $(document).ready(function() {
         $('#txtEmployeeAccountBank').val(employee.PersonalTaxCode);
         $('#txtEmployeeBank').val(employee.PersonalTaxCode);
     }
+
+    function renderTable() {
+        const start = (currentPage - 1) * rowsPerPage;
+        const end = start + rowsPerPage;
+        const pageData = allData.slice(start, end);
+
+        $("#m-table tbody").empty();
+        let numOrder = start + 1;
+        for(const employee of pageData) {
+            let employeeCode = employee.EmployeeCode;
+            let employeeFullName = employee.FullName;
+            let employeeGender = employee["GenderName"];
+            let employeeDOB = convertDate(employee["DateOfBirth"]);
+            let employeeEmail = employee.Email;
+            let employeeAddress = employee.Address;
+            
+            var el = $(`
+                <tr>
+                    <td class="m-text-align-center">
+                        <input type="checkbox" class="m-checkbox m-sub-checkbox" id="m-sub-checkbox">
+                    </td>
+                    <td class="m-text-align-left">${numOrder}</td>
+                    <td class="m-text-align-left">${employeeCode}</td>
+                    <td class="m-text-align-left">${employeeFullName}</td>
+                    <td class="m-text-align-left">${employeeGender}</td>
+                    <td class="m-text-align-center">${employeeDOB}</td>
+                    <td class="m-text-align-left">${employeeEmail}</td>
+                    <td class="m-text-align-left">${employeeAddress}</td>
+                    <td class="m-text-align-left"><div class="row-btn">
+                        <button class="m-icon-edit m-icon-btn " id="edit-btn-form"></button>
+                        <button class="m-icon-copy  m-icon-btn " ></button>
+                        <button class="m-icon-close-x  m-icon-btn "  id="delete-btn-form"></button>
+                    </div>
+                    </td>
+                </tr>
+            `);
+            el.data("employee", employee);
+            $("#m-table tbody").append(el);
+            numOrder++;
+        }
+        $(".m-number").text(allData.length);
+    }
+
+    $(document).on('click', '.m-pre-btn', function() {
+        if (currentPage > 1) {
+            currentPage--;
+            renderTable();
+            renderPagination();
+        }
+    });
+
+    // Event listener for next button
+    $(document).on('click', '.m-next-btn', function() {
+        const totalPages = Math.ceil(allData.length / rowsPerPage);
+        if (currentPage < totalPages) {
+            currentPage++;
+            renderTable();
+            renderPagination();
+        }
+    });
+
+    // Event listener for rows per page change
+    $('#m-comboboxValues a').on('click', function(event) {
+        event.preventDefault();
+        rowsPerPage = parseInt($(this).text());
+        $('#btn-page p').text(rowsPerPage);
+        currentPage = 1; // Reset to the first page
+        renderTable();
+        renderPagination();
+    });
+
+    function searchByInfor() {
+        allData = [];
+        let employeeInfor = $("#search-infor").val();
+        $.ajax({
+            type: "GET",
+            url: `https://cukcuk.manhnv.net/api/v1/Employees/filter?employeeFilter=${employeeInfor}`,
+            success: function(res) {
+                if (res && Array.isArray(res.Data)) {
+                    $("#m-table tbody").empty();
+                    loading();
+                    allData = res.Data;
+                    currentPage = 1; // Reset to the first page
+                    renderTable();
+                    $(".m-number").text(allData.length);
+
+                } else {
+                    console.error('Data received from API is not an array:', res);
+                }
+            },
+            error: function(err) {
+                console.error('Error fetching data:', err);
+            }
+        });
+    }
+
+    $('#search-infor').on('blur', function() {
+        searchByInfor();
+    });
     //hàm convert ngày tháng 
     function convertDate(employeeDOB) {
         if(employeeDOB) {

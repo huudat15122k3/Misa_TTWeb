@@ -1,0 +1,15 @@
+D:\Misa\WORKS\Github\BE\api\MISA.CUKCUKDemo.Infrastructure\bin\Debug\net8.0\MISA.CUKCUKDemo.Infrastructure.deps.json
+D:\Misa\WORKS\Github\BE\api\MISA.CUKCUKDemo.Infrastructure\bin\Debug\net8.0\MISA.CUKCUKDemo.Infrastructure.dll
+D:\Misa\WORKS\Github\BE\api\MISA.CUKCUKDemo.Infrastructure\bin\Debug\net8.0\MISA.CUKCUKDemo.Infrastructure.pdb
+D:\Misa\WORKS\Github\BE\api\MISA.CUKCUKDemo.Infrastructure\bin\Debug\net8.0\MISA.CUKCUKDemo.Core.dll
+D:\Misa\WORKS\Github\BE\api\MISA.CUKCUKDemo.Infrastructure\bin\Debug\net8.0\MISA.CUKCUKDemo.Core.pdb
+D:\Misa\WORKS\Github\BE\api\MISA.CUKCUKDemo.Infrastructure\obj\Debug\net8.0\MISA.CUKCUKDemo.Infrastructure.csproj.AssemblyReference.cache
+D:\Misa\WORKS\Github\BE\api\MISA.CUKCUKDemo.Infrastructure\obj\Debug\net8.0\MISA.CUKCUKDemo.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Misa\WORKS\Github\BE\api\MISA.CUKCUKDemo.Infrastructure\obj\Debug\net8.0\MISA.CUKCUKDemo.Infrastructure.AssemblyInfoInputs.cache
+D:\Misa\WORKS\Github\BE\api\MISA.CUKCUKDemo.Infrastructure\obj\Debug\net8.0\MISA.CUKCUKDemo.Infrastructure.AssemblyInfo.cs
+D:\Misa\WORKS\Github\BE\api\MISA.CUKCUKDemo.Infrastructure\obj\Debug\net8.0\MISA.CUKCUKDemo.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Misa\WORKS\Github\BE\api\MISA.CUKCUKDemo.Infrastructure\obj\Debug\net8.0\MISA.CUK.89B132A3.Up2Date
+D:\Misa\WORKS\Github\BE\api\MISA.CUKCUKDemo.Infrastructure\obj\Debug\net8.0\MISA.CUKCUKDemo.Infrastructure.dll
+D:\Misa\WORKS\Github\BE\api\MISA.CUKCUKDemo.Infrastructure\obj\Debug\net8.0\refint\MISA.CUKCUKDemo.Infrastructure.dll
+D:\Misa\WORKS\Github\BE\api\MISA.CUKCUKDemo.Infrastructure\obj\Debug\net8.0\MISA.CUKCUKDemo.Infrastructure.pdb
+D:\Misa\WORKS\Github\BE\api\MISA.CUKCUKDemo.Infrastructure\obj\Debug\net8.0\ref\MISA.CUKCUKDemo.Infrastructure.dll

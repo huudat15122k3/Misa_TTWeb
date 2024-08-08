@@ -1,0 +1,274 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Misa\\WORKS\\Github\\BE\\api\\MISA.CUKCUKDemo.Api\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C8BDFB3A-5872-482E-8EE3-014C54EE9486}|..\\MISA.CUKCUKDemo.Core\\MISA.CUKCUKDemo.Core.csproj|d:\\misa\\works\\github\\be\\api\\misa.cukcukdemo.core\\services\\baseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8BDFB3A-5872-482E-8EE3-014C54EE9486}|..\\MISA.CUKCUKDemo.Core\\MISA.CUKCUKDemo.Core.csproj|d:\\misa\\works\\github\\be\\api\\misa.cukcukdemo.core\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB27BBF3-2094-48F9-97D3-21E369912ED7}|..\\MISA.CUKCUKDemo.Infrastructure\\MISA.CUKCUKDemo.Infrastructure.csproj|d:\\misa\\works\\github\\be\\api\\misa.cukcukdemo.infrastructure\\interfaces\\imisadbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB27BBF3-2094-48F9-97D3-21E369912ED7}|..\\MISA.CUKCUKDemo.Infrastructure\\MISA.CUKCUKDemo.Infrastructure.csproj|d:\\misa\\works\\github\\be\\api\\misa.cukcukdemo.infrastructure\\repository\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB27BBF3-2094-48F9-97D3-21E369912ED7}|..\\MISA.CUKCUKDemo.Infrastructure\\MISA.CUKCUKDemo.Infrastructure.csproj|d:\\misa\\works\\github\\be\\api\\misa.cukcukdemo.infrastructure\\repository\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8BDFB3A-5872-482E-8EE3-014C54EE9486}|..\\MISA.CUKCUKDemo.Core\\MISA.CUKCUKDemo.Core.csproj|d:\\misa\\works\\github\\be\\api\\misa.cukcukdemo.core\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8BDFB3A-5872-482E-8EE3-014C54EE9486}|..\\MISA.CUKCUKDemo.Core\\MISA.CUKCUKDemo.Core.csproj|d:\\misa\\works\\github\\be\\api\\misa.cukcukdemo.core\\misaenum\\misaenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8BDFB3A-5872-482E-8EE3-014C54EE9486}|..\\MISA.CUKCUKDemo.Core\\MISA.CUKCUKDemo.Core.csproj|d:\\misa\\works\\github\\be\\api\\misa.cukcukdemo.core\\interfaces\\iemployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB27BBF3-2094-48F9-97D3-21E369912ED7}|..\\MISA.CUKCUKDemo.Infrastructure\\MISA.CUKCUKDemo.Infrastructure.csproj|d:\\misa\\works\\github\\be\\api\\misa.cukcukdemo.infrastructure\\databasecontext\\mariadbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8BDFB3A-5872-482E-8EE3-014C54EE9486}|..\\MISA.CUKCUKDemo.Core\\MISA.CUKCUKDemo.Core.csproj|d:\\misa\\works\\github\\be\\api\\misa.cukcukdemo.core\\const\\misaconst.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A796112-A850-4F43-993D-F3DD62D1EE14}|MISA.CUKCUKDemo.Api.csproj|d:\\misa\\works\\github\\be\\api\\misa.cukcukdemo.api\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A796112-A850-4F43-993D-F3DD62D1EE14}|MISA.CUKCUKDemo.Api.csproj|solutionrelative:controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8BDFB3A-5872-482E-8EE3-014C54EE9486}|..\\MISA.CUKCUKDemo.Core\\MISA.CUKCUKDemo.Core.csproj|d:\\misa\\works\\github\\be\\api\\misa.cukcukdemo.core\\resource\\resource1.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A796112-A850-4F43-993D-F3DD62D1EE14}|MISA.CUKCUKDemo.Api.csproj|D:\\Misa\\WORKS\\Github\\BE\\api\\MISA.CUKCUKDemo.Api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A796112-A850-4F43-993D-F3DD62D1EE14}|MISA.CUKCUKDemo.Api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8BDFB3A-5872-482E-8EE3-014C54EE9486}|..\\MISA.CUKCUKDemo.Core\\MISA.CUKCUKDemo.Core.csproj|d:\\misa\\works\\github\\be\\api\\misa.cukcukdemo.core\\exceptions\\handleexceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8BDFB3A-5872-482E-8EE3-014C54EE9486}|..\\MISA.CUKCUKDemo.Core\\MISA.CUKCUKDemo.Core.csproj|d:\\misa\\works\\github\\be\\api\\misa.cukcukdemo.core\\exceptions\\validateexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8BDFB3A-5872-482E-8EE3-014C54EE9486}|..\\MISA.CUKCUKDemo.Core\\MISA.CUKCUKDemo.Core.csproj|d:\\misa\\works\\github\\be\\api\\misa.cukcukdemo.core\\interfaces\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MISAEnum.cs",
+              "DocumentMoniker": "D:\\Misa\\WORKS\\Github\\BE\\api\\MISA.CUKCUKDemo.Core\\MISAEnum\\MISAEnum.cs",
+              "RelativeDocumentMoniker": "..\\MISA.CUKCUKDemo.Core\\MISAEnum\\MISAEnum.cs",
+              "ToolTip": "D:\\Misa\\WORKS\\Github\\BE\\api\\MISA.CUKCUKDemo.Core\\MISAEnum\\MISAEnum.cs",
+              "RelativeToolTip": "..\\MISA.CUKCUKDemo.Core\\MISAEnum\\MISAEnum.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T13:53:08.338Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "D:\\Misa\\WORKS\\Github\\BE\\api\\MISA.CUKCUKDemo.Core\\Entities\\Employee.cs",
+              "RelativeDocumentMoniker": "..\\MISA.CUKCUKDemo.Core\\Entities\\Employee.cs",
+              "ToolTip": "D:\\Misa\\WORKS\\Github\\BE\\api\\MISA.CUKCUKDemo.Core\\Entities\\Employee.cs",
+              "RelativeToolTip": "..\\MISA.CUKCUKDemo.Core\\Entities\\Employee.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwBsAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T13:51:24.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IMISADbContext.cs",
+              "DocumentMoniker": "D:\\Misa\\WORKS\\Github\\BE\\api\\MISA.CUKCUKDemo.Infrastructure\\Interfaces\\IMISADbContext.cs",
+              "RelativeDocumentMoniker": "..\\MISA.CUKCUKDemo.Infrastructure\\Interfaces\\IMISADbContext.cs",
+              "ToolTip": "D:\\Misa\\WORKS\\Github\\BE\\api\\MISA.CUKCUKDemo.Infrastructure\\Interfaces\\IMISADbContext.cs",
+              "RelativeToolTip": "..\\MISA.CUKCUKDemo.Infrastructure\\Interfaces\\IMISADbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T13:33:38.909Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BaseRepository.cs",
+              "DocumentMoniker": "D:\\Misa\\WORKS\\Github\\BE\\api\\MISA.CUKCUKDemo.Infrastructure\\Repository\\BaseRepository.cs",
+              "RelativeDocumentMoniker": "..\\MISA.CUKCUKDemo.Infrastructure\\Repository\\BaseRepository.cs",
+              "ToolTip": "D:\\Misa\\WORKS\\Github\\BE\\api\\MISA.CUKCUKDemo.Infrastructure\\Repository\\BaseRepository.cs",
+              "RelativeToolTip": "..\\MISA.CUKCUKDemo.Infrastructure\\Repository\\BaseRepository.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAAwCsAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T13:26:35.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EmployeeRepository.cs",
+              "DocumentMoniker": "D:\\Misa\\WORKS\\Github\\BE\\api\\MISA.CUKCUKDemo.Infrastructure\\Repository\\EmployeeRepository.cs",
+              "RelativeDocumentMoniker": "..\\MISA.CUKCUKDemo.Infrastructure\\Repository\\EmployeeRepository.cs",
+              "ToolTip": "D:\\Misa\\WORKS\\Github\\BE\\api\\MISA.CUKCUKDemo.Infrastructure\\Repository\\EmployeeRepository.cs",
+              "RelativeToolTip": "..\\MISA.CUKCUKDemo.Infrastructure\\Repository\\EmployeeRepository.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T09:09:55.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IEmployeeService.cs",
+              "DocumentMoniker": "D:\\Misa\\WORKS\\Github\\BE\\api\\MISA.CUKCUKDemo.Core\\Interfaces\\IEmployeeService.cs",
+              "RelativeDocumentMoniker": "..\\MISA.CUKCUKDemo.Core\\Interfaces\\IEmployeeService.cs",
+              "ToolTip": "D:\\Misa\\WORKS\\Github\\BE\\api\\MISA.CUKCUKDemo.Core\\Interfaces\\IEmployeeService.cs",
+              "RelativeToolTip": "..\\MISA.CUKCUKDemo.Core\\Interfaces\\IEmployeeService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T09:08:46.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EmployeeService.cs",
+              "DocumentMoniker": "D:\\Misa\\WORKS\\Github\\BE\\api\\MISA.CUKCUKDemo.Core\\Services\\EmployeeService.cs",
+              "RelativeDocumentMoniker": "..\\MISA.CUKCUKDemo.Core\\Services\\EmployeeService.cs",
+              "ToolTip": "D:\\Misa\\WORKS\\Github\\BE\\api\\MISA.CUKCUKDemo.Core\\Services\\EmployeeService.cs",
+              "RelativeToolTip": "..\\MISA.CUKCUKDemo.Core\\Services\\EmployeeService.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACAAAABxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-03T14:23:53.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BaseService.cs",
+              "DocumentMoniker": "D:\\Misa\\WORKS\\Github\\BE\\api\\MISA.CUKCUKDemo.Core\\Services\\BaseService.cs",
+              "RelativeDocumentMoniker": "..\\MISA.CUKCUKDemo.Core\\Services\\BaseService.cs",
+              "ToolTip": "D:\\Misa\\WORKS\\Github\\BE\\api\\MISA.CUKCUKDemo.Core\\Services\\BaseService.cs",
+              "RelativeToolTip": "..\\MISA.CUKCUKDemo.Core\\Services\\BaseService.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABcAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T09:04:37.281Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MariaDbContext.cs",
+              "DocumentMoniker": "D:\\Misa\\WORKS\\Github\\BE\\api\\MISA.CUKCUKDemo.Infrastructure\\DatabaseContext\\MariaDbContext.cs",
+              "RelativeDocumentMoniker": "..\\MISA.CUKCUKDemo.Infrastructure\\DatabaseContext\\MariaDbContext.cs",
+              "ToolTip": "D:\\Misa\\WORKS\\Github\\BE\\api\\MISA.CUKCUKDemo.Infrastructure\\DatabaseContext\\MariaDbContext.cs",
+              "RelativeToolTip": "..\\MISA.CUKCUKDemo.Infrastructure\\DatabaseContext\\MariaDbContext.cs",
+              "ViewState": "AQIAAFIAAAAAAAAAAADwvxIAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T13:31:53.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MISAConst.cs",
+              "DocumentMoniker": "D:\\Misa\\WORKS\\Github\\BE\\api\\MISA.CUKCUKDemo.Core\\Const\\MISAConst.cs",
+              "RelativeDocumentMoniker": "..\\MISA.CUKCUKDemo.Core\\Const\\MISAConst.cs",
+              "ToolTip": "D:\\Misa\\WORKS\\Github\\BE\\api\\MISA.CUKCUKDemo.Core\\Const\\MISAConst.cs",
+              "RelativeToolTip": "..\\MISA.CUKCUKDemo.Core\\Const\\MISAConst.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T13:50:20.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EmployeesController.cs",
+              "DocumentMoniker": "D:\\Misa\\WORKS\\Github\\BE\\api\\MISA.CUKCUKDemo.Api\\Controllers\\EmployeesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EmployeesController.cs",
+              "ToolTip": "D:\\Misa\\WORKS\\Github\\BE\\api\\MISA.CUKCUKDemo.Api\\Controllers\\EmployeesController.cs",
+              "RelativeToolTip": "Controllers\\EmployeesController.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAjwCIAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T11:37:00.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Resource1.resx",
+              "DocumentMoniker": "D:\\Misa\\WORKS\\Github\\BE\\api\\MISA.CUKCUKDemo.Core\\Resource\\Resource1.resx",
+              "RelativeDocumentMoniker": "..\\MISA.CUKCUKDemo.Core\\Resource\\Resource1.resx",
+              "ToolTip": "D:\\Misa\\WORKS\\Github\\BE\\api\\MISA.CUKCUKDemo.Core\\Resource\\Resource1.resx",
+              "RelativeToolTip": "..\\MISA.CUKCUKDemo.Core\\Resource\\Resource1.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-08-07T13:46:23.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Misa\\WORKS\\Github\\BE\\api\\MISA.CUKCUKDemo.Api\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Misa\\WORKS\\Github\\BE\\api\\MISA.CUKCUKDemo.Api\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAABoAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T11:16:02.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ValidateException.cs",
+              "DocumentMoniker": "D:\\Misa\\WORKS\\Github\\BE\\api\\MISA.CUKCUKDemo.Core\\Exceptions\\ValidateException.cs",
+              "RelativeDocumentMoniker": "..\\MISA.CUKCUKDemo.Core\\Exceptions\\ValidateException.cs",
+              "ToolTip": "D:\\Misa\\WORKS\\Github\\BE\\api\\MISA.CUKCUKDemo.Core\\Exceptions\\ValidateException.cs",
+              "RelativeToolTip": "..\\MISA.CUKCUKDemo.Core\\Exceptions\\ValidateException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T09:16:47.926Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "HandleExceptionMiddleware.cs",
+              "DocumentMoniker": "D:\\Misa\\WORKS\\Github\\BE\\api\\MISA.CUKCUKDemo.Core\\Exceptions\\HandleExceptionMiddleware.cs",
+              "RelativeDocumentMoniker": "..\\MISA.CUKCUKDemo.Core\\Exceptions\\HandleExceptionMiddleware.cs",
+              "ToolTip": "D:\\Misa\\WORKS\\Github\\BE\\api\\MISA.CUKCUKDemo.Core\\Exceptions\\HandleExceptionMiddleware.cs",
+              "RelativeToolTip": "..\\MISA.CUKCUKDemo.Core\\Exceptions\\HandleExceptionMiddleware.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAswCAAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T11:12:07.065Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IEmployeeRepository.cs",
+              "DocumentMoniker": "D:\\Misa\\WORKS\\Github\\BE\\api\\MISA.CUKCUKDemo.Core\\Interfaces\\IEmployeeRepository.cs",
+              "RelativeDocumentMoniker": "..\\MISA.CUKCUKDemo.Core\\Interfaces\\IEmployeeRepository.cs",
+              "ToolTip": "D:\\Misa\\WORKS\\Github\\BE\\api\\MISA.CUKCUKDemo.Core\\Interfaces\\IEmployeeRepository.cs",
+              "RelativeToolTip": "..\\MISA.CUKCUKDemo.Core\\Interfaces\\IEmployeeRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T14:01:54.67Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
